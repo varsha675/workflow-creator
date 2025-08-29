@@ -1,0 +1,5 @@
+{
+  "name": "Interactive Workflow Builder",
+  "description": "A drag-and-drop canvas for designing, visualizing, and summarizing business automation workflows. Users can build detailed flows with different node types and generate a simplified, linear summary of the entire process.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Workflow Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@xyflow/react/dist/style.css" />
+    <style>
+      body {
+        overscroll-behavior: none;
+      }
+      /* Custom Scrollbar Styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #27272a; /* zinc-800 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #52525b; /* zinc-600 */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #71717a; /* zinc-500 */
+      }
+      .react-flow__handle {
+        width: 10px;
+        height: 10px;
+        border: 2px solid #18181b; /* zinc-900 */
+        background-color: #a1a1aa; /* zinc-400 */
+      }
+      .react-flow__handle-right { right: -6px; }
+      .react-flow__handle-left { left: -6px; }
+      .react-flow__handle-top { top: -6px; }
+      .react-flow__handle-bottom { bottom: -6px; }
+      .react-flow__edge-path {
+        stroke: #a1a1aa; /* zinc-400 */
+        stroke-width: 2;
+      }
+      .react-flow__edge-text {
+        font-size: 12px;
+        fill: #fafafa; /* gray-50 */
+      }
+      .react-flow__attribution {
+        display: none !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "@xyflow/react": "https://aistudiocdn.com/@xyflow/react@^12.8.4"
+  }
+}
+</script>
+</head>
+  <body class="bg-zinc-900 text-white">
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@xyflow/react/dist/umd/index.js"></script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
